@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color:antiquewhite;
+    background-color: antiquewhite;
     font-family: sans-serif;
     color: black;
 }
@@ -70,12 +70,18 @@ header {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.705);
     border-radius: 10px;
     font-weight: 650;
+    color: black;
 }
 
 .right-container > button:hover {
     cursor: pointer;
     transition: all .5s ease;
     background-color: rgb(253, 227, 192);
+}
+
+.right-container > button:active, 
+.right-container > button:focus {
+    color: black; 
 }
 
 @media only screen and (max-width: 800px){
