@@ -13,22 +13,23 @@
 
     <main>
         <div class="main-quiz">
-            <div class="left-container">
-                <label>Pergunta:</label>
-                <p>Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element</p>
+            <div class="left-container" id="left-container">
+                <label id="label">Pergunta:</label>
+                <p class="question" id="question-text"></p>
             </div>
-            <div class="right-container">
-                <button> It also includes history, demos, patterns, and a browser support chart.</button>
-                <button>Resposta 2</button>
-                <button>Resposta 3</button>
-                <button>Resposta 4</button>
+            <div class="right-container" id="right-container">
+                <button id="button1"></button>
+                <button id="button2"></button>
+                <button id="button3"></button>
+                <button id="button4"></button>
                 <div class="points">
                     <label>Pontos:</label>
-                    <h5>130</h5>
+                    <h5 id="points"></h5>
                 </div>
+                <button class="next-btn" id="next-btn">Próxima / Pular</button>
             </div>
         </div>
     </main>
-    <script src="script.js"></script>
+    <script src="Script.js"></script>
 </body>
 </html>
