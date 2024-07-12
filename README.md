@@ -5,7 +5,7 @@ Welcome to the Quiz Project! This web-based application allows users to answer q
 ## Table of Contents
 
 - [Features](#features)
-- [Installation](#installation)
+- [Visit the project](#visit-the-project)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
@@ -15,30 +15,16 @@ Welcome to the Quiz Project! This web-based application allows users to answer q
 
 - **Multiple Questions**: Predefined questions with multiple-choice answers.
 - **Score Tracking**: Keeps track of the user's score as they progress through the quiz.
-- **Interactive Interface**: Users can click on answers and navigate through questions.
+- **Interactive Interface**: Users can click on answers and will automatically skip to the next question
 - **Responsive Design**: Works well on both desktop and mobile devices.
 
-## Installation
+## Visit the project
 
-To set up the project locally, follow these steps:
-
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/yourusername/quiz-project.git
-    ```
-
-2. **Navigate to the project directory**:
-    ```bash
-    cd quiz-project
-    ```
-
-3. **Open `index.html` in your preferred browser**.
+1. [**Click here to see the project**](https://buenolas.github.io/quiz/)
 
 ## Usage
 
-- **Start the Quiz**: Open `index.html` in your browser to start the quiz.
 - **Answer Questions**: Click on one of the multiple-choice buttons to select your answer.
-- **Next Question**: Click the "Próxima / Pular" button to move to the next question.
 - **Track Your Score**: The score is updated in real-time as you answer questions.
 
 ## Project Structure
