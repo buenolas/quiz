@@ -74,12 +74,6 @@ header {
     color: black; /* Define a cor do texto */
 }
 
-.right-container > button:hover {
-    cursor: pointer;
-    transition: all .5s ease;
-    background-color: rgb(253, 227, 192);
-}
-
 .right-container > button:active, 
 .right-container > button:focus {
     color: black; /* Garante a cor preta no estado ativo e foco */
