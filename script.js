@@ -13,7 +13,7 @@ const pointsText   = document.getElementById('points');
 let index = 0;  //set the index for the dataBase elements
 let points = 0; //count points
 let validation; //validate to change color
-
+let processedIndexs = [];
 
 const nextIndex = () => {   //get to the next index
     index++;    //increment
@@ -87,33 +87,38 @@ const changeBackground = (target, validation) => {  //changes the background
 
 }
 
-nextBtn.addEventListener('click', event =>{ //skip to the next question
-
-    event.preventDefault()
-
-    nextIndex();    //update the index
-});
-
 container.addEventListener('click', event =>{   //listen when a button is clicked
     
+    event.preventDefault();
+
     const target = event.target.id; //get the id of the target
     const targetText = event.target.textContent;    //get the text on the button
 
+    if(processedIndexs.includes(index)){    //verify if the current index was already processed
+        return;
+    }
+    
     if(targetText === dataBase[index].correct){ //check if the targetText content is the same as the correct one in the data base
+        
         sumPoints();    //sum points
         
         pointsUpdate();    //update points
-        
+
         validation = true;  //set the validate as true so it don't have to verify again qhen changing the background
         
         changeBackground(target, validation);   //change color
-    }
-    else if (targetText == "Próxima / Pular"){  //error handling
-        
+
+        processedIndexs.push(index);    //push the index on the array
+
+        setTimeout(nextIndex, 2000)  //change question automatic
     }
     else {
         validation = false;
         changeBackground(target, validation);   //changes color
+        
+        processedIndexs.push(index);    //push the index on the array
+
+        setTimeout(nextIndex, 2000)  //change question automatic
     }
 
 });
